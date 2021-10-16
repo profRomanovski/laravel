@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +16,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('default');
 });
+
+Route::get('/user-info',[UserController::class, 'uerInfo']);
+Route::get('/admin-info',[AdminController::class, 'adminInfo']);
