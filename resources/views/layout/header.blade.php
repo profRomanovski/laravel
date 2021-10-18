@@ -1,11 +1,11 @@
 <div class="container col-8 align-content-center">
 <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
-    <a class="navbar-brand" href="{{route('home')}}">Blog</a>
+    <a class="navbar-brand col-4" href="{{route('home')}}">Blog</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarsExample09">
+    <div class="collapse navbar-collapse col-8" id="navbarsExample09">
         <ul class="navbar-nav mr-auto">
             @if(Auth::check())
                 <li class="nav-item">
@@ -38,3 +38,12 @@
     </div>
 </nav>
 </div>
+<style>
+    #navbarsExample09 {
+        justify-content: flex-end;
+        padding-right: 17px;
+    }
+    .form-inline {
+        margin-left: 10px;
+    }
+</style>
