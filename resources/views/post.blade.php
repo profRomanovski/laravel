@@ -3,10 +3,7 @@
     <div class="row">
         <div class="col-sm-3">
             <ul class="list-group list-group-flush pt-3">
-                <li class="list-group-item-primary">About author</li>
-                <li class="list-group-item">{{$user->name}}</li>
-                <li class="list-group-item">{{$user->email}}</li>
-                <li class="list-group-item">Written posts: {{$user->posts->count()}}</li>
+                <li class="list-group-item-primary">Деталі</li>
                 <li class="list-group-item"><a href="{{url()->previous()}}" class=" btn btn-success">Go Back</a></li>
             </ul>
         </div>

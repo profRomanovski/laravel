@@ -4,7 +4,7 @@
         <div class="col-sm-3">
             <ul class="list-group pt-3" id="catogoryList" role="tablist">
                 <a class="list-group-item list-group-item-action"
-                    data-toggle="list" role="tab" href="{{route('home', ['cat'=>'all'])}}">All</a>
+                    data-toggle="list" role="tab" href="{{route('home', ['cat'=>'all'])}}">Всі</a>
                 @foreach($categories as $category)
                     <a class="list-group-item list-group-item-action"
                         data-toggle="list" role="tab" href="{{route('home', ['cat'=>"$category->id"])}}">{{$category->name}}</a>
@@ -17,7 +17,6 @@
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">{{$post->name}}</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Created by {{$post->username}}</h6>
                         <p class="card-text">{{$post->description}}</p>
                         <a href="{{route('view-post', ['id'=>$post->id])}}" class="card-link">Read more</a>
                     </div>

@@ -50,9 +50,6 @@ class User extends Authenticatable
 
     public function isAdmin()
     {
-        if(Auth::user()->email === 'eadmin@gmail.com')
-            return true;
-        else
-            return false;
+        return true;
     }
 }

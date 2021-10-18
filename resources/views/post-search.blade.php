@@ -12,7 +12,6 @@
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">{{$post->name}}</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Created by {{$post->username}}</h6>
                             <p class="card-text">{{$post->description}}</p>
                             <a href="{{route('view-post', ['id'=>$post->id])}}" class="card-link">Read more</a>
                         </div>

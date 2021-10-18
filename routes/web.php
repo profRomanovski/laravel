@@ -18,24 +18,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [MainController::class, 'index'])->name('home');
 
-Route::get('/login', [AuthController::class, 'index'])->name('login');
-Route::post('/signin', [AuthController::class, 'createSignin'])->name('signin');
-
-
-Route::get('/register', [AuthController::class, 'signup'])->name('register');
-Route::post('/create-user', [AuthController::class, 'SignupUser'])->name('user.registration');
-
-
-Route::get('/dashboard', [AuthController::class, 'dashboardView'])->name('dashboard');
-Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
 Route::get('/post-view', [PostController::class, 'view'])->name('view-post');
-Route::get('/post-edit', [PostController::class, 'edit'])->name('edit-post');
-
-Route::post('/post-update', [PostController::class, 'update'])->name('post.update');
-
-Route::get('/post-create', [PostController::class, 'create'])->name('post.create.view');
-
-Route::post('/post-create-action', [PostController::class, 'createPost'])->name('post.create');
 
 Route::get('/post-search', [PostController::class, 'search'])->name('post.search');
 
