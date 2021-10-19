@@ -7,7 +7,8 @@
                     data-toggle="list" role="tab" href="{{route('home', ['cat'=>'all'])}}">Всі</a>
                 @foreach($categories as $category)
                     <a class="list-group-item list-group-item-action"
-                        data-toggle="list" role="tab" href="{{route('home', ['cat'=>"$category->id"])}}">{{$category->name}}</a>
+                        data-toggle="list" role="tab"
+                       href="{{route('home', ['cat'=>"$category->id"])}}">{{$category->name}}</a>
                 @endforeach
             </ul>
         </div>
